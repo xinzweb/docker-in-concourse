@@ -5,7 +5,7 @@ You can find the example pipeline started `dockerd` inside a concourse task.
 
 ```bash
 # deploy the pipeline
-fly -t your-concourse set-pipeline -p pipeline.yml
+fly -t your-concourse set-pipeline -p test-docker-in-concourse -c pipeline.yml
 ```
 
 Once you start your pipeline, and click on the job `docker in concourse`, you should see `docker` works inside
