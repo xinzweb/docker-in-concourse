@@ -8,25 +8,8 @@ You can find the example pipeline started `dockerd` inside a concourse task.
 fly -t your-concourse set-pipeline -p test-docker-in-concourse -c pipeline.yml
 ```
 
-Once you start your pipeline, and click on the job `docker in concourse`, you should see `docker` works inside
-a concourse container. You expect to see following output:
-
-```bash
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-Unable to find image 'docker:latest' locally
-latest: Pulling from library/docker
-ff3a5c916c92: Pull complete
-1a649ea86bca: Pull complete
-ce35f4d5f86a: Pull complete
-d0600fe571bc: Pull complete
-e16e21051182: Pull complete
-a3ea1dbce899: Pull complete
-Digest: sha256:eb3f84220dfdb3d37cc5fdee03733fbe4a2c7935eebb5bd93c8f2db4c2b3b63d
-Status: Downloaded newer image for docker:latest
-bin    dev    etc    home   lib    media  mnt    proc   root   run    sbin   srv    sys    tmp    usr    var
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-docker              latest              2232c0bbbb8c        12 days ago         133MB
-```
+Once you start your pipeline, and click on the job `docker in concourse`, you should
+see `docker` works inside a concourse container.
 
 # Behind the Scenes
 

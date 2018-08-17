@@ -21,7 +21,6 @@ jobs:
         platform: linux
         inputs:
         - name: docker-in-concourse # required
-        - name: docker
         run:
           path: sh
           args:
@@ -45,6 +44,5 @@ jobs:
               ####
               # verify the docker works
               ####
-              docker images
               docker run -it --rm docker:latest ls
-              docker images
+              docker system df -v
